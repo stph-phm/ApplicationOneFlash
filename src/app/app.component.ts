@@ -14,8 +14,8 @@ export class AppComponent implements OnInit {
 
 
   constructor(public firebaseService: FirebaseService) {
-    
    }
+   
   ngOnInit(){
     if(localStorage.getItem('user') !== null)
     this.isSignedIn = true

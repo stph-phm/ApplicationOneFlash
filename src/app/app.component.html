@@ -1,13 +1,13 @@
 <div class="content  {{storedTheme}}" role="main">
 
   <div class="theme-options">
-    <div id="theme-red" [ngClass]="(storedTheme === 'theme-red') ? 'active' : '' " (click)="setTheme('theme-red')">
+    <div id="theme-red" >
     </div>
 
-    <div id="theme-blue" [ngClass]="(storedTheme === 'theme-blue') ? 'active' : '' " (click)="setTheme('theme-blue')">
+    <div id="theme-blue" >
     </div>
 
-    <div id="theme-purple" [ngClass]="(storedTheme === 'theme-purple') ? 'active' : '' "
+    <div id="theme-purple"
       (click)="setTheme('theme-purple')"></div>
   </div>
 
@@ -16,7 +16,7 @@
       <h2>Sign Up</h2>
 
       <input type="text" #emailSignUp>
-      <input type="text" #passwordSignUp>
+      <input type="password" #passwordSignUp>
       <button (click)="onSignUp(emailSignUp.value,passwordSignUp.value )">Sign Up</button>
     </div>
 
@@ -25,7 +25,7 @@
     <div class="signIn" *ngIf="!isSignedIn">
       <h2>Sign In</h2>
       <input type="text" #email>
-      <input type="text" #password>
+      <input type="password" #password>
       <button (click)="onSignIn(email.value, password.value)">Sign In</button>
     </div>
   </div>
